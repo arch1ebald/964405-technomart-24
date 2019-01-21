@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Артур Вишневый](https://up.htmlacademy.ru/htmlcss/24/user/964405).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Панасюк] (https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 
