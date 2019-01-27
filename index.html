@@ -5,8 +5,128 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+  	<header class="main-header">
+		<nav class="main-navigation">
+		<a class="main-header-logo">
+		<img src="img/index.svg" width="200" height="50">
+		</a>
+		<!--Здесь будет форма поиска-->
+ 		<ul class="order-info">
+			<li><a class="bookmarks" href="#">Закладки</a></li>
+			<li><a class="basket" href="#">Корзина</a></li>
+			<li><a class="ordering" href="#">Оформить заказ</a></li>
+		</ul>
+		<p class="about-site">
+			Интернет-магазин<br>
+			строительных материалов<br>
+			и инструментов для ремонта
+		</p>
+		<ul class="contacts">
+			<li class="phone number">+7 (812) 555-05-55</li>
+			<li class="adres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
+		</ul>
+		<ul class="user-navigation">
+			<li class="login-link">Войти</li>
+			<li class="registar-link">Регистрация</li>
+		</ul>
+		<ul class="site-navigation">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="company.html">Компания</a></li>
+			<li><a href="catalog.html">Каталог</a></li>
+			<li><a href="news.html">Новости</a></li>
+			<li><a href="discours.html">Спецпредложения</a></li>
+			<li><a href="delivery.html">Доставка</a></li>
+			<li><a href="contacs.html">Контакты</a></li>
+		</ul>
+	    </nav>
+    </header>
+		<main class="container">
+			<!--Основная часть-->
+			<section class="company-info">
+			 <h2 class="about-company">Компания	"Техномарт"</h2>
+			 <p>
+			 	Настоящий мужской шоппинг начинается здесь! огромный выбор товаров для ремонта и<br>
+			 строительства не оставит равнодушным любителям сэкономить на гастрабайтерах.			 </p>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+			 <p>
+			 	Мы можем доставить ваш товар в самые отдаленные точки Россиии!<br>
+			 	Техномарт работает со многими транспортными компаниями:
+			 </p>
+			 <ul class="transport companies">
+			 	<li>Деловые линии</li>
+			 	<li>Автотрейдинг</li>
+			 	<li>ЖэлДорЭкспедиция</li>
+			 	
+			 </ul>
+	
+			</section>
+			<section class="company-details">
+				<a class="button" href="#">Подробнее о компании</a>
+			</section>
+           <section class="main-contacs">
+           	<p>
+           			<a href="map.html">
+           		Вы можете забрать товар сами<br>
+           		заехав в наш офис:
+           	</a>
+            </p>
+            </section>
+            <section class="writing-form">
+				<a class="button" href="#">Заблудились? Напишите нам!</a>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<nav class="footer-navigation">
+				<a class="main-footer-logo">
+		     <img src="img/index.svg" width="200" height="50">
+		     </a>
+		     <p class="footer-contacs">
+		    	г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+		    	+7 (812) 555-05-55
+		     </p>
+		     <ul class="site-navigation">
+			 <li><a href="company.html">Компания</a></li>
+			 <li><a href="news.html">Новости</a></li>
+			 <li><a href="catalog.html">Каталог</a></li>
+			 <li><a href="delivery.html">Доставка</a></li>
+			 <li class="colortext"><a href="material.html">Материалы</a></li>
+			 <li class="colortext"><a href="technics.html">Техника</a></li>
+			 <li class="colortext"><a href="tool.html">Инструмент</a></li>
+			 <li class="colortext"><a href="discounts.html">Спецпредложения</a></li>
+			</ul>
+			<p class="footer-copywrite">
+				© 2010-2017 Компания «Техномарт»<br>
+				Все права защищены
+			</p>
+			<div class="footer-social">
+				<ul>
+					<li><a class="social-button" href="#">Вконтакте</a></li>
+					<li><a class="social-button" href="#">Фейсбук</a></li>
+					<li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+                <ul class="footer-mail">
+                	<li>Обратная связь</li>
+                	<li class="colortext">mail@htmlacademy.ru</li>
+                </ul>>
+                <ul class="developer">
+                	<li>Разработано:</li>
+                	<li class="colortext">htmlacademy.ru</li>
+                </ul>
+           </nav>
+			</footer>
 
-  </body>
+			<section class="modal modal-login">
+			<h2>Личный кабинет</h2>
+			<p>Введите свой логинь и пароль.</p>
+			<!--Здесь будет форма-->
+			<span class="modal-close">x</span>
+		</section>
+
+		<section class="modal modal-register">
+			<h2>Регистрация</h2>
+			<!--Здесь текст регистрации-->
+			<!--Здесь будет форма-->
+			<span class="modal-close">x</span>
+		</section>
+		</body>
 </html>
