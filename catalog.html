@@ -8,7 +8,14 @@
       <header class="main-header">
          <nav class="header-top">
             <a class="logo" href="index.html">Техномарт</a>
-            <!--Здесь будет форма поиска-->
+            <form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" name="serching" placeholder="Поиск:">
+            </form>
+            <ul class="order-info">
+               <li><a class="bookmarks" href="#">Закладки</a></li>
+               <li><a class="basket" href="#">Корзина</a></li>
+               <li><a class="ordering" href="#">Оформить заказ</a></li>
+            </ul>
             <ul class="client-info">
                <li>
                   <a href="#">Равшан</a>
@@ -16,12 +23,12 @@
                </li>
                <li><a href="#">Мои заказы</a></li>
                <li><a href="#">Личный кабинет</a></li>
-            </ul>
+            </ul>  </div>
+            <ul class="main-navigation">
             <div class="header-contacts">
                <p class="phone-number">+7 (812) 555-05-55</p>
                <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            </div>
-            <ul class="main-navigation">
+          
                <li><a class="site-navigattion-item" href="index.html">Главная</a></li>
                <li><a class="site-navigattion-item" href="company.html">Компания</a></li>
                <li><a class="site-navigattion-item" href="catalog.html">Каталог</a></li>
@@ -40,9 +47,51 @@
          </ul>
          <h1 class="main-title">Перфораторы</h1>
          <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!--Здесь будет форма-->
-            <span class="button-show-filters">Показать</span>
+            <p class="filter-items">Фильтр</p>
+            <form class="filter-form" action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=itemprice.value">
+               <fieldset class="filter-price">
+                  <legend>Цена</legend>
+                  <input type="range" min="0" max="30000" name="itemprice" step="1">
+                  <output name="priceoutput"></output>
+               </fieldset>
+               <fieldset class="filter-manufacturers">
+                  <legend>Производители</legend>
+                  <ul>
+                     <li class="filter-option">
+                        <input type="checkbox" name="BOSCH" id="filter-BOSCH" checked>
+                        <label for="filter-BOSCH">BOSCH</label>
+                     </li>
+                     <li class="filter-option">
+                        <input type="checkbox" name="Interskol" id="filter-Interskol">
+                        <label for="filter-Interskol">Интерскол</label>
+                     </li>
+                     <li class="filter-option">
+                        <input type="checkbox" name="Makita" id="filter-Makita" checked>
+                        <label for="filter-Makita">Makita</label>
+                     </li>
+                     <li class="filter-option">
+                        <input type="checkbox" name="DeWalt" id="filter-DeWalt">
+                        <label for="filter-DeWalt">DeWalt</label>
+                     </li>
+                     <li class="filter-option">
+                        <input type="checkbox" name="Hitachi" id="filter-Hitachi">
+                        <label for="filter-Hitahi">Hitachi</label>
+                     </li>
+               </fieldset>
+               <fieldset class="filter-nutrition">
+                  <legend>Питание</legend>
+                  <ul>
+                     <li class="filter-option">
+                        <input type="radio" value="acumulator" id="filter-acumulator" name="type-group">
+                        <label for="filter-acumulator">Аккумуляторные</label>
+                     </li>
+                     <li class="filter-option">
+                        <input type="radio" value="networked" id="filter-networked" name="type-group">
+                        <label for="filter-networked">Сетевые</label>
+                     </li>
+               </fieldset>
+            </form>
+            <button class="button-show-filters">Показать</button>
          </section>
          <section class="catalog">
          <div class="sorting">
@@ -257,5 +306,11 @@
             </p>
          </div>
       </footer>
+      <form class="basket-form" action="https://echo.htmlacademy.ru" method="post">
+         <p class="added">Товар добавлен в корзину!</p>
+         <button class="button" type="submit">Оформить заказ</button>
+         <button class="continue-purchases" type="button">Продолжить покупки</button>
+         <button class="modal-close" type="button">Закрыть</button>
+      </form>
    </body>
 </html>
