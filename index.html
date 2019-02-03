@@ -10,7 +10,7 @@
             <a class="logo">
             </a>
             <form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="search" name="serching" placeholder="Поиск:">
+               <input class="visually-hidden" type="search" name="serching" placeholder="Поиск:">
             </form>
             <ul class="order-info">
                <li><a class="bookmarks" href="#">Закладки</a></li>
@@ -68,34 +68,34 @@
                <button class="button drill-button drill-button-back">Назад</button>
                <button class="button drill-button drill-button-next">Вперед</button>
                <ul class="slider-content">
-                 <li> 
-                  <img src="img/drill.jpg" width="620" height="266" alt="Дрели">
-                  <a href="catalog.html"></a>
-               <h2 class="title-main">Дрели</h2>
-               <p>
-               <h3>Соседям на радость!</h3>
-               </p>
-                 </li> 
-                 <li>
-                    <img src="img/drill-2.jpg" width="620" height="266" alt="Перфораторы"></a>
-                    <a href="catalog.html"></a>
-               <h2 class="title-main">Перфораторы</h2>
-               <p>
-               <h3>Настоящие мужские игрушки</h3>
-               </p>
-                 </li>
-              </ul>
+                  <li>
+                     <img src="img/drill.jpg" width="620" height="266" alt="Дрели">
+                     <a href="catalog.html"></a>
+                     <h2 class="title-main">Дрели</h2>
+                     <p>
+                     <h3>Соседям на радость!</h3>
+                     </p>
+                  </li>
+                  <li>
+                     <img src="img/drill-2.jpg" width="620" height="266" alt="Перфораторы"></a>
+                     <a href="catalog.html"></a>
+                     <h2 class="title-main">Перфораторы</h2>
+                     <p>
+                     <h3>Настоящие мужские игрушки</h3>
+                     </p>
+                  </li>
+               </ul>
                <a class="button" href="catalog.html">Открыть каталог</a>
             </div>
             <ul class="advantages">
-               <li class="advantages-title">
-                  <h3>Скидки 50%</h3>
-                  <p class="advantages-description">На все товары</p>
-               </li>
-               <li class="advantages-title">
-                  <h3>Доставка</h3>
-                  <p class="advantages-description">Бесплатно</p>
-               </li>
+            <li class="advantages-title">
+               <h3>Скидки 50%</h3>
+               <p class="advantages-description">На все товары</p>
+            </li>
+            <li class="advantages-title">
+               <h3>Доставка</h3>
+               <p class="advantages-description">Бесплатно</p>
+            </li>
          </section>
          <section class="popular-goods">
             <h2 class="title-main">Популярные товары</h2>
@@ -156,30 +156,30 @@
             <h2 class="title-main">Популярные производители</h2>
             <a class="button" href="#">Все производители</a>
             <ul class="manufacturers-list-top">
-               <li>
+               <li class="visually-hidden"> 
                   <img src="img/logo-1.jpg" width="126" height="37" alt="BOSCH">
                </li>
                <li>
                   <img src="img/logo-2.jpg" width="123" height="40" alt="Makita">
                </li>
-               <li>
+               <li class="visually-hidden">
                   <img src="img/logo-3.jpg" width="146" height="44" alt="DeWalt">
                </li>
-               <li>
+               <li class="visually-hidden">
                   <img src="img/logo-4.jpg" width="200" height="88" alt="Интерскол">
                </li>
             </ul>
             <ul class="manufacturers-list-bottom">
-               <li>
+               <li class="visually-hidden">
                   <img src="img/logo-5.jpg" width="169" height="31" alt="Hitachi">
                </li>
-               <li>
+               <li class="visually-hidden">
                   <img src="img/logo-6.jpg" width="121" height="73" alt="LG">
                </li>
-               <li>
+               <li class="visually-hidden">
                   <img src="img/logo-7.jpg" width="151" height="96" alt="AEG">
                </li>
-               <li>
+               <li class="visually-hidden">
                   <img src="img/logo-8.jpg" width="204" height="69" alt="Metabo">
                </li>
             </ul>
@@ -302,22 +302,22 @@
          </div>
          <form class="writing-form">
             <p>
-            <label for="name-field">Ваше имя:</label>
-            <br>
-            <input type="text" id="name-field" placeholder="Имя Фамилия">
-         </p>
-         <p>
-            <label for="email-field">Ваш e-mail:</label>
-            <br>
-            <input type="text" name="email-field" id="email-field" placeholder="email@example.com">
-         </p>
-         <p>
-            <label for="text-field">Текст письма:</label>
-            <br>
-            <textarea rows="3" name="text-field" placeholder="В свободной форме"></textarea>
-         </p>
-         <button class="button"type="submit" name="send">Отправить</button>
-         <button class="modal-close" type="button">Закрыть</button>
+               <label for="name-field">Ваше имя:</label>
+               <br>
+               <input type="text" id="name-field" placeholder="Имя Фамилия">
+            </p>
+            <p>
+               <label for="email-field">Ваш e-mail:</label>
+               <br>
+               <input type="text" name="email-field" id="email-field" placeholder="email@example.com">
+            </p>
+            <p>
+               <label for="text-field">Текст письма:</label>
+               <br>
+               <textarea rows="3" name="text-field" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button"type="submit" name="send">Отправить</button>
+            <button class="modal-close" type="button">Закрыть</button>
          </form>
       </footer>
    </body>

@@ -9,13 +9,19 @@
          <nav class="header-top">
             <a class="logo" href="index.html">Техномарт</a>
             <form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="search" name="serching" placeholder="Поиск:">
+               <input class="visually-hidden" type="search" name="serching" placeholder="Поиск:">
             </form>
             <ul class="order-info">
                <li><a class="bookmarks" href="#">Закладки</a></li>
                <li><a class="basket" href="#">Корзина</a></li>
                <li><a class="ordering" href="#">Оформить заказ</a></li>
             </ul>
+            <section class="basket-section">
+               <p class="added">Товар добавлен в корзину!</p>
+               <a class="checkout" href="#">Оформить заказ</a>
+               <button class="continue-purchases" type="button">Продолжить покупки</button>
+               <button class="modal-close" type="button">Закрыть</button>
+            </section>
             <ul class="client-info">
                <li>
                   <a href="#">Равшан</a>
@@ -23,12 +29,12 @@
                </li>
                <li><a href="#">Мои заказы</a></li>
                <li><a href="#">Личный кабинет</a></li>
-            </ul>  </div>
+            </ul>
+            </div>
             <ul class="main-navigation">
-            <div class="header-contacts">
+               <div class="header-contacts">
                <p class="phone-number">+7 (812) 555-05-55</p>
                <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          
                <li><a class="site-navigattion-item" href="index.html">Главная</a></li>
                <li><a class="site-navigattion-item" href="company.html">Компания</a></li>
                <li><a class="site-navigattion-item" href="catalog.html">Каталог</a></li>
@@ -77,6 +83,7 @@
                         <input type="checkbox" name="Hitachi" id="filter-Hitachi">
                         <label for="filter-Hitahi">Hitachi</label>
                      </li>
+                  </ul>
                </fieldset>
                <fieldset class="filter-nutrition">
                   <legend>Питание</legend>
@@ -89,29 +96,30 @@
                         <input type="radio" value="networked" id="filter-networked" name="type-group">
                         <label for="filter-networked">Сетевые</label>
                      </li>
+                  </ul>
                </fieldset>
             </form>
             <button class="button-show-filters">Показать</button>
          </section>
          <section class="catalog">
-         <div class="sorting">
-            <span>Сортировка:</span>
-            <ul class="sort-by">
-               <li>
-                  <a class="by-price" href="#">По цене</a>
-               </li>
-               <li>
-                  <a class="by-type" href="#">По типу</a>
-               </li>
-               <li>
-                  <a class="by-functions" href="#">По функционалу</a>
-               </li>
-            </ul>
-            <ul class="sort-button">
-               <li class="button sort-button drill-button-up"></li>
-               <li class="button sort-button drill-button-down"></li> 
-            </ul>
-         </div>
+            <div class="sorting">
+               <span>Сортировка:</span>
+               <ul class="sort-by">
+                  <li>
+                     <a class="by-price" href="#">По цене</a>
+                  </li>
+                  <li>
+                     <a class="by-type" href="#">По типу</a>
+                  </li>
+                  <li>
+                     <a class="by-functions" href="#">По функционалу</a>
+                  </li>
+               </ul>
+               <ul class="sort-button">
+                  <li class="button sort-button drill-button-up"></li>
+                  <li class="button sort-button drill-button-down"></li>
+               </ul>
+            </div>
             <ul class="catalog-list">
                <li class="catalog-item">
                   <div class="catalog-item-hover">
@@ -285,10 +293,10 @@
             </ul>
          </div>
          <div class="footer-bottom">
-         <p class="footer-copyright">
-            © 2010-2017 Компания «Техномарт»
-            Все права защищены
-         </p>
+            <p class="footer-copyright">
+               © 2010-2017 Компания «Техномарт»
+               Все права защищены
+            </p>
          </div>
          <div class="footer-social">
             <ul>
@@ -306,11 +314,5 @@
             </p>
          </div>
       </footer>
-      <form class="basket-form" action="https://echo.htmlacademy.ru" method="post">
-         <p class="added">Товар добавлен в корзину!</p>
-         <button class="button" type="submit">Оформить заказ</button>
-         <button class="continue-purchases" type="button">Продолжить покупки</button>
-         <button class="modal-close" type="button">Закрыть</button>
-      </form>
    </body>
 </html>
