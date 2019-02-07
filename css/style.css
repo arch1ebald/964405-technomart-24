@@ -3,7 +3,7 @@ body{
 	padding: 0;
 
 	font-family: "PT Sans", "Cuprum", sans-serif;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: normal;
 	line-height: 24px;
 	text-align: left;
@@ -185,13 +185,6 @@ black использовал до смещения текста и слайде�
 .popular-manufacturers{
 	background-color: #f9f5f0;
 }
-.popular-manufacturers-title{
-	font-family: Cuprum;
-	font-size: 30px;
-	text-align: left;
-	text-transform: uppercase;
-	color:#32425c;
-}
 .item-title{
 	font-family: PTSans;
 	font-size: 18px;
@@ -223,31 +216,11 @@ black использовал до смещения текста и слайде�
 .services{
 	background-color: #f4f7f9;
 }
-.services-title{
-	font-family: Cuprum;
-	font-size: 30px;
-	color: black;
-	text-transform: uppercase;
-}
 p{
-	font-family: PTSans;
-	font-size: 13px;
 	text-align: left;
 	color: black;
 }
-.delivery-title{
-	font-family: Cuprum;
-	font-size: 30px;
-	color: black;
-	text-transform: uppercase;
-}
-.guarantees-title{
-	font-family: Cuprum;
-	font-size: 30px;
-	color: black;
-	text-transform: uppercase;
-}
-.credit-title{
+.services-list-title{
 	font-family: Cuprum;
 	font-size: 30px;
 	color: black;
@@ -405,31 +378,17 @@ p{
 	text-decoration: underline;
 }
 .breadcrumbs-item{
-	font-family: PTSans;
-	font-size: 13px;
 	text-align: left;
 	color: black;
 	text-transform: uppercase;
 }
 .breadcrumbs-current{
-	font-family: PTSans;
-	font-size: 13px;
 	text-align: left;
 	color: black;
 	text-transform: uppercase;
 }
-.catalog-title{
-	font-family: Cuprum;
-	font-size: 30px;
-	text-align: left;
-	color: #32425c;
-	text-transform: uppercase;
-	background-color: #f2f6f8;
-}
 .filter-item{
 	background-color: #f7f3ec;
-	font-family: PTSans;
-	font-size: 13px;
 	text-align: left;
 	color: black;
 }
@@ -457,31 +416,23 @@ legend{
 	text-transform: uppercase;
 }
 .sort-by{
-	font-family: PTSans;
-	font-size: 13px;
 	text-align: left;
 	text-transform: uppercase;
 	color: black;
 }
 .by-price{
-	font-family: PTSans;
-	font-size: 13px;
 	text-align: left;
 	text-transform: uppercase;
 	color: rgb(172, 170, 165);
 	border-bottom: dotted; 
 }
 .by-type{
-	font-family: PTSans;
-	font-size: 13px;
 	text-align: left;
 	text-transform: uppercase;
 	color: rgb(172, 170, 165);
 	border-bottom: dotted; 
 }
 .by-functions{
-	font-family: PTSans;
-	font-size: 13px;
 	text-align: left;
 	text-transform: uppercase;
 	color: rgb(172, 170, 165);
@@ -525,15 +476,11 @@ legend{
 	border: 2px solid #32425c;
 }
 .pagination-item{
-	font-family: PTSans;
 	text-align: center;
-	font-size: 13px;
 	color: black;
 }
 .pagination-item-current{
-	font-family: PTSans;
 	text-align: center;
-	font-size: 13px;
 	color: white;
 	background-color: #ee3643;
 }
