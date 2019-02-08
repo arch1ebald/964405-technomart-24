@@ -13,10 +13,12 @@ body{
 }
 a {
  	text-decoration: none;
+ 	color: black;
 }
-.logo{
-	width: 220px;
-  	height: 47px;
+.logo {
+	display: block;
+	width: 569px;
+  	height: 90px;
   	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   	background-color: #ee3643;
 }
@@ -45,13 +47,7 @@ a {
 	background-color: white;
 	color: black;
 }
-.bookmarks{
-	font-size: 17px;
-	font-family: Cuprum;
-	text-align: left;
-	color: #ffffff;
-}
-.basket{
+.order-info a{
 	font-size: 17px;
 	font-family: Cuprum;
 	text-align: left;
@@ -88,14 +84,7 @@ a {
 	text-align: center;
 	color: #32425c;
 }
-.login-link{
-	font-family: Cuprum;
-	font-size: 21px;
-	text-align: left;
-	color: black;
-	background-color: white;
-}
-.register-link{
+.user-navigation a{
 	font-family: Cuprum;
 	font-size: 21px;
 	text-align: left;
@@ -162,10 +151,6 @@ a {
 	text-align: left;
 	color: black;
 }
-/*
-в .slider-title и .slider-description свойсвто color - будет изменено
-black использовал до смещения текста и слайдеров.
-*/ 
 .button{
 	font: inherit;
 	text-align: center;
@@ -211,7 +196,8 @@ black использовал до смещения текста и слайде�
 	font-size: 17px;
 	text-align: center;
 	font-weight: bold;
-	color: black; /*цвет будет изменен*/
+	background-color: #ee3643;
+	color: white;
 }
 .services{
 	background-color: #f4f7f9;
@@ -226,7 +212,7 @@ p{
 	color: black;
 	text-transform: uppercase;
 }
-.main-delivery{
+.services a{
 	background-color: #32425c;
 	font-family: Cuprum;
 	font-size: 21px;
@@ -234,33 +220,11 @@ p{
 	color: #ffffff;
 	font-weight: bold;
 }
-.main-guarantees{
-	background-color: #32425c;
-	font-family: Cuprum;
-	font-size: 21px;
-	text-align: left;
-	color: #ffffff;
-	font-weight: bold;
-}
-.main-credits{
-	background-color: #32425c;
-	font-family: Cuprum;
-	font-size: 21px;
-	text-align: left;
-	color: #ffffff;
-	font-weight: bold;
-}
-.main-delivery:hover,
-.main-delivery:focus,
-.main-guarantees:hover,
-.main-guarantees:focus,
-.main-credits:hover,
-.main-credits:focus{
+.services a:hover,
+.services a:focus{
 	background-color: #293449;
 }
-.main-delivery:active,
-.main-guarantees:active,
-.main-credits:active{
+.services a:active {
 	background-color: #ffffff;
 	color: #32425c;
 }
@@ -329,19 +293,7 @@ p{
 .social-button:focus{
 	background-color: #ee3643;
 }
-.call-back{
-	font-family: Cuprum;
-	font-size: 16px;
-	text-align: left;
-	color: #ffffff;
-}
-.mail{
-	font-family: Cuprum;
-	font-size: 16px;
-	text-align: left;
-	color: #ffd180;
-}
-.developer{
+.footer-call-back{
 	font-family: Cuprum;
 	font-size: 16px;
 	text-align: left;
@@ -377,12 +329,7 @@ p{
 	color: #32425c;
 	text-decoration: underline;
 }
-.breadcrumbs-item{
-	text-align: left;
-	color: black;
-	text-transform: uppercase;
-}
-.breadcrumbs-current{
+.breadcrumbs li{
 	text-align: left;
 	color: black;
 	text-transform: uppercase;
@@ -420,37 +367,19 @@ legend{
 	text-transform: uppercase;
 	color: black;
 }
-.by-price{
+.sort-by a{
 	text-align: left;
 	text-transform: uppercase;
 	color: rgb(172, 170, 165);
 	border-bottom: dotted; 
 }
-.by-type{
-	text-align: left;
-	text-transform: uppercase;
-	color: rgb(172, 170, 165);
-	border-bottom: dotted; 
-}
-.by-functions{
-	text-align: left;
-	text-transform: uppercase;
-	color: rgb(172, 170, 165);
-	border-bottom: dotted; 
-}
-.by-price:hover,
-.by-type:hover,
-.by-functions:hover,
-.by-price:focus,
-.by-type:focus,
-.by-functions:focus{
+.sort-by a:hover,
+.sort-by a:focus{
 	color: black;
 	border-bottom: none;
 	text-decoration: underline;
 }
-.by-price:active,
-.by-type:active,
-.by-functions:active{
+.sort-by a:active{
 	color: #ee3643;
 	border-bottom: none;
 	text-decoration: none;
