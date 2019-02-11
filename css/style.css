@@ -10,40 +10,28 @@ body{
 	color: #000000;
 	background-color: #ffffff;
 	background-position: top center;
-	min-width: 1200px;
-	min-height: 3151px;
 }
 a {
  	text-decoration: none;
  	color: black;
 }
-.logo {
+.header-logo {
 	display: block;
 	width: 220px;
   	height: 47px;
   	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   	background-color: #ee3643;
-  	margin: 0 10px;
-  	padding: 0;
 }
-.logo:hover,
-.logo:focus{
+.header-logo:hover,
+.header-logo:focus{
 	background-color: #ca2c37;
 }
 .visually-hidden{
 	display: none;
 }
-.header-wrapper{
+.header-top{
 	background-color: #293449;
-	width: 100%;
-	margin-bottom: 50px;
-}
-.container {
-  	width: 940px;
-    margin: 0 auto;
-    padding: auto 10px;
-    display: flex;
-    flex-direction: row;
+	margin: 0;
 }
 .searching{
 	font-size: 17px;
@@ -52,9 +40,6 @@ a {
 	color: #ffffff;
 	background-color: #293449;
 	border: none;
-	margin: 0 10px;
-	padding: 0; 	
-	width: 160px;
 }
 .searching::placeholder{
 	color: #ffffff;
@@ -62,13 +47,6 @@ a {
 .searching:hover{
 	background-color: white;
 	color: black;
-}
-.order-info{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	margin: 0;
-	padding: 0;
 }
 .order-info a{
 	font-size: 17px;
@@ -82,15 +60,12 @@ a {
 	text-align: left;
 	color: #ffffff;
 	background-color: #63a63e;
-	margin: 0;
-	padding: 0;
 	width: 150px;
+	height: 42px;
 }
 .header-content{
 	background-color: #f4f7f9;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
+	margin: 0;
 }
 .about-site{
 	font-family: Cuprum;
@@ -111,10 +86,6 @@ a {
 	text-align: center;
 	color: #32425c;
 }
-.user-navigation{
-	display: flex;
-	flex-direction: row;
-}
 .user-navigation a{
 	font-family: Cuprum;
 	font-size: 21px;
@@ -122,32 +93,13 @@ a {
 	color: black;
 	background-color: white;
 }
-.login-link{
-	width: 120px;
-	margin: 0;
-	padding: 0;
-}
-.login-register{
-	width: 150px;
-	margin: 0;
-	padding: 0;
-}
-.login-link:hover,
-.login-link:focus,
-.register-link:hover,
-.register-link:focus{
+.user-navigation a:hover,
+.user-navigation a:focus{
 	color: #ee3643;
 }
 .main-navigation{
 	box-shadow: inset 0px -5px 0 0 #293449;
   	background-color: #32425c;
-  	display: flex;
-  	justify-content: space-between;
-  	width: 940px;
-  	margin-top: 45px;
-  	margin-bottom: 60px;
-  	align-self: center;
-  	padding: 0 50px;
 }
 .site-navigation-item{
 	color: #ffffff;
@@ -290,13 +242,20 @@ p{
 }
 .footer-top{
 	background-color: #32425c;
-	width: 100%;
-	margin-top: 90px;
 }
 .footer-bottom{
 	background-color: #293449;
-	width: 100%;
-	margin-top: 90px;
+}
+.footer-logo {
+	display: block;
+	width: 220px;
+  	height: 70px;
+  	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  	background-color: #ee3643;
+}
+.footer-logo:hover,
+.footer-logo:focus{
+	background-color: #ca2c37;
 }
 .footer-contacts{
 	font-family: Cuprum;
@@ -481,31 +440,77 @@ label{
 	color: black;
 	font-size: 30px;
 }
-.footer-logo {
-	display: block;
-	width: 220px;
-  	height: 70px;
-  	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-  	background-color: #ee3643;
-  	margin: 0 10px;
-  	padding: 0;
-}
-.footer-logo:hover,
-.footer-logo:focus{
-	background-color: #ca2c37;
-}
+
+
+
+
 .main-header{
 	margin-bottom: 60px;
+}
+.header-top{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+.searching{
+	width: 160px;
+	margin: 0 auto;
+	padding: 0;
+}
+.order-info{
+	width: 460px;
+	display: flex;
+	align-self: flex-end;
+	margin: auto;
+}
+.container{
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.header-content{
+	display: flex;
+	flex-direction: column;
+}
+.main-navigation{
+	display: flex;
+  	justify-content: space-between;
+  	width: 940px;
+  	margin-bottom: 60px;
+  	align-self: center;
+  	padding: 0 50px;
+}
+.about-site{
+	width: 200px;
+	margin: 54px 50px;
+}
+.header-contacts{
+	margin-left: 75px;
+	margin-right: 70px;
+	width: 270px;
+}
+.phone-number{
+	border: 2px solid white;
+	padding: 5px 60px;
+}
+.user-navigation{
+	display: flex;
 }
 .main-footer{
 	margin-top: 90px;
 }
-
+.footer-top{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
 .footer-navigation-top{
 	display: flex;
 	justify-content: space-between;
-	align-self: flex-start;
-	order: 0;
+	flex-direction: row;
+	align-self: 
 	width: 550px;
 	margin: 0 10px;
 	padding: 0;
@@ -513,9 +518,12 @@ label{
 .footer-navigation-bottom{
 	display: flex;
 	justify-content: space-between;
-	align-self: flex-end;
-	order: 1;
+	flex-direction: row;
+	align-self: 
 	width: 550px;
 	margin: 0 10px;
 	padding: 0;
+}
+.footer-copyright{
+	width: 230px;
 }
