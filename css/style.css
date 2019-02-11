@@ -110,19 +110,19 @@ a {
 .site-navigation-item:focus{
 	background-color: #1d2739;
 }
-.advantages-1{
+.advantages-goods .advantages-item:first-child{
 	background-color: #ffbf47;
 }
-.advantages-2{
+.advantages-goods .advantages-item:nth-child(2){
 	background-color: #3bbce3;
 }
-.advantages-3{
+.advantages-goods .advantages-item:nth-child(3){
 	background-color: #dc91d8;
 }
-.advantages-4{
+.advantages-conditions .advantages-item:first-child{
 	background-color: #8ed78f;
 }
-.advantages-5{
+.advantages-conditions .advantages-item:nth-child(2){
 	background-color: #ffc047;
 }
 .advantages-title{
