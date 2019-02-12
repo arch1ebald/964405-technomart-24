@@ -31,7 +31,6 @@ a {
 }
 .header-top{
 	background-color: #293449;
-	margin: 0;
 }
 .searching{
 	font-size: 17px;
@@ -447,12 +446,11 @@ label{
 .main-header{
 	margin-bottom: 60px;
 }
-.header-top{
+.header-top .container{
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 100%;
+	justify-content: space-between;
 }
+	
 .searching{
 	width: 160px;
 	margin: 0 auto;
@@ -461,8 +459,8 @@ label{
 .order-info{
 	width: 460px;
 	display: flex;
-	align-self: flex-end;
-	margin: auto;
+	justify-content: space-between;
+	margin-left: auto;
 }
 .container{
 	width: 940px;
@@ -510,7 +508,6 @@ label{
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-	align-self: 
 	width: 550px;
 	margin: 0 10px;
 	padding: 0;
