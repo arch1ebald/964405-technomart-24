@@ -570,7 +570,13 @@ label{
 }
 .services-bottom{
 	display: flex;
-	flex-direction: row;
+	justify-content: space-between;
+}
+.company-info{
+	width: 540px;
+}
+.company-contacts{
+	width: 310px;
 }
 .main-footer{
 	margin-top: 90px;
