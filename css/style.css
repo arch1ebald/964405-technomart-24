@@ -3,55 +3,74 @@ body{
 	padding: 0;
 
 	font-family: "PT Sans", "Cuprum", sans-serif;
-	font-size: 13px;
 	font-weight: normal;
-	line-height: 24px;
-	text-align: left;
 	color: #000000;
 	background-color: #ffffff;
-	background-position: top center;
 }
-a {
- 	text-decoration: none;
- 	color: black;
+/*Шапка*/
+.main-header{
+	margin-bottom: 60px;
+}
+.container{
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.header-top .container{
+	display: flex;
 }
 .header-logo {
-	display: block;
-	width: 220px;
-  	height: 47px;
-  	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+	width: 111px;
   	background-color: #ee3643;
+  	box-shadow: 0 5px 0 0 #ca2c37;
 }
 .header-logo:hover,
 .header-logo:focus{
 	background-color: #ca2c37;
+	box-shadow: 0 5px 0 0 #ba2732;
 }
 .visually-hidden{
-	display: none;
+	position: absolute;
+    clip: rect(0 0 0 0);
+  	width: 1px;
+  	height: 1px;
+  	margin: -1px;
 }
 .header-top{
 	background-color: #293449;
-}
-.searching{
 	font-size: 17px;
 	font-family: Cuprum;
+	justify-content: space-between;
+	align-items: center;
+}
+.searching{
 	text-align: left;
 	color: #ffffff;
-	background-color: #293449;
+	background-color: transparent;
 	border: none;
-}
-.searching::placeholder{
-	color: #ffffff;
+	width: 160px;
+	margin: 0 auto;
+	padding: 0;
 }
 .searching:hover{
 	background-color: white;
 	color: black;
 }
+.searching::placeholder{
+	color: white;
+}
+.order-info{
+	width: 460px;
+	display: flex;
+	margin: 0;
+	padding: 10px 0;
+	margin-left: auto;
+	list-style: none;
+}
 .order-info a{
-	font-size: 17px;
-	font-family: Cuprum;
 	text-align: left;
 	color: #ffffff;
+	text-decoration: none;
 }
 .ordering{
 	text-align: left;
@@ -63,32 +82,50 @@ a {
 .header-content{
 	background-color: #f4f7f9;
 	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-family: Cuprum;
 }
 .about-site{
-	font-family: Cuprum;
 	font-size: 16px;
 	font-style: italic;
 	color: #ee3643;
 	text-align: left;
+	width: 200px;
+	margin: 54px 50px;
+}
+.site-info{
+	display: flex;
+	flex-direction: row;
+}
+.header-contacts{
+	margin: auto;
+	width: 270px;
 }
 .phone-number{
 	font-size: 21px;
 	text-align: left;
 	color: #ee3643;
-	font-family: Cuprum;
+	border: 2px solid white;
+	padding: 5px 60px;
 }
 .address{
 	font-size: 14px;
-	font-family: Cuprum;
 	text-align: center;
 	color: #32425c;
 }
+.user-navigation{
+	display: flex;
+	margin: auto;
+	list-style: none;
+}
 .user-navigation a{
-	font-family: Cuprum;
 	font-size: 21px;
 	text-align: left;
 	color: black;
 	background-color: white;
+	text-decoration: none;
 }
 .user-navigation a:hover,
 .user-navigation a:focus{
@@ -97,6 +134,15 @@ a {
 .main-navigation{
 	box-shadow: inset 0px -5px 0 0 #293449;
   	background-color: #32425c;
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  	list-style: none;
+  	padding: 20px 45px;
+}
+.main-navigation a{
+text-decoration: none;
+list-style: none;
 }
 .site-navigation-item{
 	color: #ffffff;
@@ -106,6 +152,16 @@ a {
 .site-navigation-item:hover,
 .site-navigation-item:focus{
 	background-color: #1d2739;
+}
+
+
+
+/*Главная*/
+
+/*Преимущества*/
+
+.advantages-conditions{
+	list-style: none;
 }
 .advantages-goods .advantages-item:first-child{
 	background-color: #ffbf47;
@@ -134,6 +190,28 @@ a {
 	font-size: 14px;
 	text-align: center;
 }
+
+.advantages-goods{
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: space-between;
+	margin: 0;
+}
+
+.advantages-item{
+	width: 300px;
+}
+.advantages-wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+/* Слайдер */
+
+
 .slider-title{
 	font-family: Cuprum;
 	font-size: 36px;
@@ -164,24 +242,59 @@ a {
 .button:active{
 	background-color: #ba2732;
 }
+
+/* Популярные товары */
+.title-main{
+	font-family: Cuprum;
+	font-size: 30px;
+	color: black;
+	text-transform: uppercase;	
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-top: 30px;
+}
 .popular-items{
 	background-color: #f9f5f0;
 }
 .item-title{
-	font-family: PTSans;
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
 	color: black;
 }
+.catalog-item{
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 25px;
+	font-family: PTSans;
+}
+.catalog-item li{
+	border: 1px solid lightgrey;
+}
 .manufacturers-list-top{
+	display: flex;
+	list-style: none;
+	width: 100%;
 	background-color: white;
+	justify-content: space-between;
+}
+.manufacturers-list-top li{
+	border: 1px solid lightgrey;
 }
 .manufacturers-list-bottom{
 	background-color: white;
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: space-between;
+	margin: 0;
+}
+.manufacturers-list-bottom li{
+	border: 1px solid lightgrey;
 }
 .catalog-item-old-price{
-	font-family: PTSans;
 	font-size: 17px;
 	text-align: center;
 	font-weight: bold;
@@ -189,19 +302,18 @@ a {
 	color:#a9a9a9;;
 }
 .catalog-item-price{
-	font-family: PTPSans;
 	font-size: 17px;
 	text-align: center;
 	font-weight: bold;
 	background-color: #ee3643;
 	color: white;
 }
+
+/* Сервисы */
+
 .services{
 	background-color: #f4f7f9;
-}
-p{
-	text-align: left;
-	color: black;
+	margin-bottom: 80px;
 }
 .services-list-title{
 	font-family: Cuprum;
@@ -225,11 +337,24 @@ p{
 	background-color: #ffffff;
 	color: #32425c;
 }
-.title-main{
-	font-family: Cuprum;
-	font-size: 30px;
-	color: black;
-	text-transform: uppercase;	
+.services .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.services-items{
+	display: flex;
+	flex-direction: column;
+}
+.services-bottom{
+	display: flex;
+	justify-content: space-between;
+}
+.company-info{
+	width: 540px;
+}
+.company-contacts{
+	width: 310px;
 }
 .carriers{
 	font-family: Cuprum;
@@ -237,11 +362,46 @@ p{
 	font-weight: bold;
 	color: black;
 }
+.main-bottom{
+	margin-bottom: 90px;
+}
+
+/*Футер*/
+.main-footer{
+	margin-top: 90px;
+	width: 100%
+}
+.footer-bottom .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 .footer-top{
 	background-color: #32425c;
+	font-family: Cuprum;
+	
 }
 .footer-bottom{
 	background-color: #293449;
+	font-family: Cuprum;
+	
+}
+.footer-navigation-item{
+	display: flex;
+	justify-content: space-between;
+}
+.footer-navigation-top{
+	display: flex;
+	justify-content: space-between;
+	width: 550px;
+	margin: 0 10px;
+	padding: 0;
+}
+.footer-navigation-bottom{
+	display: flex;
+	justify-content: space-between;
+	width: 550px;
+	margin: 0 10px;
 }
 .footer-logo {
 	display: block;
@@ -255,44 +415,43 @@ p{
 	background-color: #ca2c37;
 }
 .footer-contacts{
-	font-family: Cuprum;
 	font-size: 18px;
 	text-align: left;
 	color: #f3f7f9;
 }
 .site-navigation-footer-item{
-	font-family: Cuprum;
 	font-size: 13px;
 	text-align: left;
 	color: #f3f7f9;
 }
 .site-navigation-footer-item:hover,
 .site-navigation-footer-item:focus{
-	font-family: Cuprum;
-	font-size: 13px;
 	text-align: left;
 	color: #f3f7f9;
 	text-decoration: underline;
 }
 .footer-navigation-item-colortext{
 	font-size: 13px;
-	font-family: Cuprum;
 	text-align: left;
 	color: #ffd180;
 }
 .footer-navigation-item-colortext:hover,
 .footer-navigation-item-colortext:focus{
 	font-size: 13px;
-	font-family: Cuprum;
 	text-align: left;
 	color: #ffd180;
 	text-decoration: underline;
 }
 .footer-copyright{
-	font-family: Cuprum;
 	font-size: 16px;
 	text-align: left;
 	color: #ffffff;
+	width: 230px;
+}
+.social-networks{
+	display: flex;
+	width: 150px;
+	justify-content: space-between;
 }
 .social-button{
 	background-color: #212a3a;
@@ -302,13 +461,14 @@ p{
 	background-color: #ee3643;
 }
 .footer-call-back{
-	font-family: Cuprum;
 	font-size: 16px;
 	text-align: left;
 	color: #ffffff;
 }
+.footer-mail-info{
+	width: 140px;
+}
 .web-site{
-	font-family: Cuprum;
 	font-size: 16px;
 	text-align: left;
 	color: #ffd180;
@@ -320,6 +480,10 @@ p{
 	color: #ffd180;
 	text-decoration: underline;
 }
+
+
+/*Каталог*/
+
 .catalog-header
 {
 	background-color: #f4f7f9;
@@ -441,177 +605,5 @@ label{
 
 
 
-.main-header{
-	margin-bottom: 60px;
-}
-.header-top .container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-	
-.searching{
-	width: 160px;
-	margin: 0 auto;
-	padding: 0;
-}
-.order-info{
-	width: 460px;
-	display: flex;
-	justify-content: space-around;
-	margin-left: auto;
-}
-.container{
-	width: 940px;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-.header-content{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-.main-navigation{
-	display: flex;
-  	flex-wrap: wrap;
-  	justify-content: space-between;
-  	list-style: none;
-  	padding: 20px 45px;
-}
-.site-info{
-	display: flex;
-	flex-direction: row;
-}
-.about-site{
-	width: 200px;
-	margin: 54px 50px;
-}
-.header-contacts{
-	margin: auto;
-	width: 270px;
-}
-.phone-number{
-	border: 2px solid white;
-	padding: 5px 60px;
-}
-.user-navigation{
-	display: flex;
-	margin: auto;
-}
-.advantages-goods{
-	display: flex;
-	list-style: none;
-	width: 100%;
-	justify-content: space-between;
-	margin: 0;
-}
 
-.advantages-item{
-	width: 300px;
-}
-.advantages-wrapper{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-bottom: 50px;
-}
 
-.title-main{
-	padding-bottom: 30px;
-	padding-left: 30px;
-	padding-top: 30px;
-}
-.catalog-item{
-	display: flex;
-	list-style: none;
-	width: 100%;
-	justify-content: space-between;
-	margin-bottom: 25px;
-}
-.catalog-item li{
-	border: 1px solid lightgrey;
-}
-.manufacturers-list-top{
-	display: flex;
-	list-style: none;
-	width: 100%;
-	justify-content: space-between;
-}
-.manufacturers-list-top li{
-	border: 1px solid lightgrey;
-}
-.main-bottom{
-	margin-bottom: 90px;
-}
-.manufacturers-list-bottom{
-	display: flex;
-	list-style: none;
-	width: 100%;
-	justify-content: space-between;
-	margin: 0;
-}
-.manufacturers-list-bottom li{
-	border: 1px solid lightgrey;
-}
-.services .container{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.services-items{
-	display: flex;
-	flex-direction: column;
-}
-.services{
-	margin-bottom: 80px;
-}
-.services-bottom{
-	display: flex;
-	justify-content: space-between;
-}
-.company-info{
-	width: 540px;
-}
-.company-contacts{
-	width: 310px;
-}
-.main-footer{
-	margin-top: 90px;
-	width: 100%
-}
-.footer-bottom .container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.footer-navigation-item{
-	display: flex;
-	justify-content: space-between;
-}
-.footer-navigation-top{
-	display: flex;
-	justify-content: space-between;
-	width: 550px;
-	margin: 0 10px;
-	padding: 0;
-}
-.footer-navigation-bottom{
-	display: flex;
-	justify-content: space-between;
-	width: 550px;
-	margin: 0 10px;
-}
-.footer-copyright{
-	width: 230px;
-}
-.social-networks{
-	display: flex;
-	width: 150px;
-	justify-content: space-between;
-}
-.footer-mail-info{
-	width: 140px;
-}
-ul{
-	list-style: none;
-}
