@@ -220,6 +220,9 @@ list-style: none;
 	color: black;
 	text-transform: uppercase;
 }
+.slider-content{
+	list-style: none;
+}
 .slider-description{
 	font-family: Cuprum;
 	font-size: 18px;
@@ -234,6 +237,7 @@ list-style: none;
 	font-family: Cuprum;
 	background-color: #ee3643;
 	color: #ffffff;
+	text-decoration: none;
 }
 .button:hover,
 .button:focus{
@@ -328,7 +332,13 @@ list-style: none;
 	text-align: left;
 	color: #ffffff;
 	font-weight: bold;
+	text-decoration: none;
 }
+.services-items,
+.services-list{
+	list-style: none;
+}
+
 .services a:hover,
 .services a:focus{
 	background-color: #293449;
@@ -390,18 +400,14 @@ list-style: none;
 	display: flex;
 	justify-content: space-between;
 }
-.footer-navigation-top{
-	display: flex;
-	justify-content: space-between;
-	width: 550px;
-	margin: 0 10px;
-	padding: 0;
-}
+.footer-navigation-top,
 .footer-navigation-bottom{
 	display: flex;
 	justify-content: space-between;
 	width: 550px;
 	margin: 0 10px;
+	padding: 0;
+	list-style: none;
 }
 .footer-logo {
 	display: block;
@@ -423,6 +429,7 @@ list-style: none;
 	font-size: 13px;
 	text-align: left;
 	color: #f3f7f9;
+	text-decoration: none;
 }
 .site-navigation-footer-item:hover,
 .site-navigation-footer-item:focus{
@@ -434,6 +441,7 @@ list-style: none;
 	font-size: 13px;
 	text-align: left;
 	color: #ffd180;
+	text-decoration: none;
 }
 .footer-navigation-item-colortext:hover,
 .footer-navigation-item-colortext:focus{
@@ -452,6 +460,7 @@ list-style: none;
 	display: flex;
 	width: 150px;
 	justify-content: space-between;
+	list-style: none;
 }
 .social-button{
 	background-color: #212a3a;
@@ -464,6 +473,9 @@ list-style: none;
 	font-size: 16px;
 	text-align: left;
 	color: #ffffff;
+}
+.footer-mail-info a{
+	text-decoration: none;
 }
 .footer-mail-info{
 	width: 140px;
