@@ -3,13 +3,9 @@ body{
 	padding: 0;
 
 	font-family: "PT Sans", "Cuprum", sans-serif;
-	font-size: 13px;
 	font-weight: normal;
-	line-height: 24px;
-	text-align: left;
 	color: #000000;
 	background-color: #ffffff;
-	background-position: top center;
 }
 /*Шапка*/
 ul{
@@ -21,11 +17,6 @@ a {
  	text-decoration: none;
  	color: white;
 }
-p{
-	text-align: left;
-	color: black;
-}
-/*
 .main-header{
 	margin-bottom: 60px;
 }
@@ -48,144 +39,11 @@ p{
 	box-shadow: 0 5px 0 0 #ba2732;
 }
 .visually-hidden{
-	display: none;
-}
-.header-top{
-	background-color: #293449;
-	font-size: 17px;
-	font-family: Cuprum;
-	justify-content: space-between;
-	align-items: center;
-}
-.searching{
-	text-align: left;
-	color: #ffffff;
-	background-color: transparent;
-	border: none;
-	width: 160px;
-	margin: 0 auto;
-	padding: 0;
-}
-.searching:hover{
-	background-color: white;
-	color: black;
-}
-.searching::placeholder{
-	color: white;
-}
-.order-info{
-	width: 460px;
-	display: flex;
-	justify-content: space-around;
-	margin-left: auto;
-}
-.order-info a{
-	text-align: left;
-	color: #ffffff;
-}
-.ordering{
-	text-align: left;
-	color: #ffffff;
-	background-color: #63a63e;
-	width: 150px;
-	height: 42px;
-}
-.header-content{
-	background-color: #f4f7f9;
-	margin: 0;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-.about-site{
-	font-family: Cuprum;
-	font-size: 16px;
-	font-style: italic;
-	color: #ee3643;
-	text-align: left;
-	width: 200px;
-	margin: 54px 50px;
-}
-.site-info{
-	display: flex;
-	flex-direction: row;
-}
-.header-contacts{
-	margin: auto;
-	width: 270px;
-}
-.phone-number{
-	font-size: 21px;
-	text-align: left;
-	color: #ee3643;
-	font-family: Cuprum;
-	border: 2px solid white;
-	padding: 5px 60px;
-}
-.address{
-	font-size: 14px;
-	font-family: Cuprum;
-	text-align: center;
-	color: #32425c;
-}
-.user-navigation{
-	display: flex;
-	margin: auto;
-}
-.user-navigation a{
-	font-family: Cuprum;
-	font-size: 21px;
-	text-align: left;
-	color: black;
-	background-color: white;
-}
-.user-navigation a:hover,
-.user-navigation a:focus{
-	color: #ee3643;
-}
-.main-navigation{
-	box-shadow: inset 0px -5px 0 0 #293449;
-  	background-color: #32425c;
-  	display: flex;
-  	flex-wrap: wrap;
-  	justify-content: space-between;
-  	list-style: none;
-  	padding: 20px 45px;
-}
-.site-navigation-item{
-	color: #ffffff;
-	font-size: 17px;
-	font-family: Cuprum;
-}
-.site-navigation-item:hover,
-.site-navigation-item:focus{
-	background-color: #1d2739;
-}
-*/
-
-.main-header{
-	margin-bottom: 60px;
-}
-.container{
-	width: 940px;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-.header-top .container{
-	display: flex;
-}
-.header-logo {
-	width: 111px;
-  	background-color: #ee3643;
-  	box-shadow: 0 5px 0 0 #ca2c37;
-}
-.header-logo:hover,
-.header-logo:focus{
-	background-color: #ca2c37;
-	box-shadow: 0 5px 0 0 #ba2732;
-}
-.visually-hidden{
-	visibility: hidden;
+	position: absolute;
+    clip: rect(0 0 0 0);
+  	width: 1px;
+  	height: 1px;
+  	margin: -1px;
 }
 .header-top{
 	background-color: #293449;
@@ -215,6 +73,7 @@ p{
 	display: flex;
 	margin: 0;
 	padding: 10px 0;
+	margin-left: auto;
 }
 .order-info a{
 	text-align: left;
