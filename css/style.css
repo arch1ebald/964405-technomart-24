@@ -20,9 +20,13 @@ body{
 	display: flex;
 }
 .header-logo {
-	width: 111px;
   	background-color: #ee3643;
   	box-shadow: 0 5px 0 0 #ca2c37;
+  	width: 220px;
+}
+.header-logo img{
+	width: 111px;
+	margin: 12px 55px 9px 55px;
 }
 .header-logo:hover,
 .header-logo:focus{
@@ -43,41 +47,60 @@ body{
 	justify-content: space-between;
 	align-items: center;
 }
+
+/* нужно проверить свг, через background-image не могу добавить*/
+.searching-form {
+  	width: 270px;
+  	margin: 10px 49px;
+}
 .searching{
-	text-align: left;
 	color: #ffffff;
 	background-color: transparent;
 	border: none;
-	width: 160px;
-	margin: 0 auto;
-	padding: 0;
 }
 .searching:hover{
 	background-color: white;
 	color: black;
+	display: block;
+    padding: 12px 0px;
+    line-height: 19px;
+    width: 270px;
+}
+.searching-form:hover{
+	width: 270px;
+	margin: 0;
 }
 .searching::placeholder{
 	color: white;
 }
 .order-info{
-	width: 460px;
-	display: flex;
+  	display: flex;
 	margin: 0;
-	padding: 10px 0;
-	margin-left: auto;
+	padding: 0;
 	list-style: none;
 }
 .order-info a{
-	text-align: left;
-	color: #ffffff;
 	text-decoration: none;
+	color: white;
+}
+.button-order, .pre-order {
+  	display: block;
+  	padding: 12px 0px;
+  	line-height: 19px;
+}
+
+.bookmark {
+  	width: 100px;
+  	padding-left: 45px;
+}
+.cart {
+  	width: 105px;
+  	padding-left: 50px;
 }
 .ordering{
-	text-align: left;
-	color: #ffffff;
 	background-color: #63a63e;
 	width: 150px;
-	height: 42px;
+	text-align: center;
 }
 .header-content{
 	background-color: #f4f7f9;
@@ -87,28 +110,30 @@ body{
 	flex-wrap: wrap;
 	font-family: Cuprum;
 }
+.site-info{
+	display: flex;
+	flex-direction: row;
+}
 .about-site{
 	font-size: 16px;
 	font-style: italic;
 	color: #ee3643;
 	text-align: left;
 	width: 200px;
-	margin: 54px 50px;
-}
-.site-info{
-	display: flex;
-	flex-direction: row;
+	margin: 50px 50px;
+	line-height: 23px;
 }
 .header-contacts{
 	margin: auto;
 	width: 270px;
+	margin-left: 20px;
 }
 .phone-number{
 	font-size: 21px;
 	text-align: left;
 	color: #ee3643;
 	border: 2px solid white;
-	padding: 5px 60px;
+	padding: 10px 50px 10px 72px;
 }
 .address{
 	font-size: 14px;
@@ -118,11 +143,17 @@ body{
 .user-navigation{
 	display: flex;
 	margin: auto;
+	margin-left: 25px;
+	margin-top: 45px;
 	list-style: none;
+	width: 285px;
+	justify-content: space-between;
 }
 .user-navigation a{
+	display: block;
+	padding: 10px;
 	font-size: 21px;
-	text-align: left;
+	text-align: center;
 	color: black;
 	background-color: white;
 	text-decoration: none;
@@ -131,6 +162,15 @@ body{
 .user-navigation a:focus{
 	color: #ee3643;
 }
+.login-link{
+	width: 123px;
+}
+.login-link a{
+	padding-left: 38px;
+}
+.register-link{
+	width: 150px;
+}
 .main-navigation{
 	box-shadow: inset 0px -5px 0 0 #293449;
   	background-color: #32425c;
@@ -138,11 +178,13 @@ body{
   	flex-wrap: wrap;
   	justify-content: space-between;
   	list-style: none;
-  	padding: 20px 45px;
-}
+  	padding: 20px 55px;
+  	margin: auto;
+  	margin-bottom: 50px;
+  }
 .main-navigation a{
-text-decoration: none;
-list-style: none;
+
+	text-decoration: none;
 }
 .site-navigation-item{
 	color: #ffffff;
@@ -157,10 +199,21 @@ list-style: none;
 
 
 /*Главная*/
-
+.main-content-top{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 /*Преимущества*/
 
+.advantages-item{
+	width: 300px;
+}
 .advantages-conditions{
+	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  	margin: auto;
 	list-style: none;
 }
 .advantages-goods .advantages-item:first-child{
@@ -193,14 +246,16 @@ list-style: none;
 
 .advantages-goods{
 	display: flex;
-	list-style: none;
-	width: 100%;
-	justify-content: space-between;
-	margin: 0;
+	list-style: none; 
 }
-
 .advantages-item{
 	width: 300px;
+	margin-right: auto;
+}
+.advantages-conditions{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px; 
 }
 .advantages-wrapper{
 	display: flex;
@@ -211,14 +266,19 @@ list-style: none;
 
 /* Слайдер */
 
-
+.slider{
+	position: relative;
+}
 .slider-title{
 	font-family: Cuprum;
 	font-size: 36px;
 	text-align: left;
 	font-weight: bold;
-	color: black;
+	color: white;
 	text-transform: uppercase;
+	position: absolute;
+	top: 25px;
+	left: 60px;
 }
 .slider-content{
 	list-style: none;
@@ -227,7 +287,26 @@ list-style: none;
 	font-family: Cuprum;
 	font-size: 18px;
 	text-align: left;
-	color: black;
+	color: white;
+	position: absolute;
+	top: 80px;
+	left: 60px;
+}
+.drill-button-back{
+	position: absolute;
+	top: 160px;
+	left: 75px;
+}
+.drill-button-next{
+	position: absolute;
+	top: 160px;
+	left: 620px;
+}
+.button-slider{
+	position: absolute;
+	top: 220px;
+	left: 60px;
+	border-radius: 2px;
 }
 .button{
 	font: inherit;
@@ -238,6 +317,7 @@ list-style: none;
 	background-color: #ee3643;
 	color: #ffffff;
 	text-decoration: none;
+	padding: 10px 50px;
 }
 .button:hover,
 .button:focus{
@@ -248,6 +328,7 @@ list-style: none;
 }
 
 /* Популярные товары */
+
 .title-main{
 	font-family: Cuprum;
 	font-size: 30px;
@@ -269,7 +350,6 @@ list-style: none;
 .catalog-item{
 	display: flex;
 	list-style: none;
-	width: 100%;
 	justify-content: space-between;
 	margin-bottom: 25px;
 	font-family: PTSans;
@@ -400,6 +480,7 @@ list-style: none;
 	display: flex;
 	justify-content: space-between;
 }
+
 .footer-navigation-top,
 .footer-navigation-bottom{
 	display: flex;
@@ -408,6 +489,10 @@ list-style: none;
 	margin: 0 10px;
 	padding: 0;
 	list-style: none;
+}
+.footer-navigation-top{
+	margin-top: 45px;
+	margin-bottom: 50px;
 }
 .footer-logo {
 	display: block;
@@ -420,10 +505,15 @@ list-style: none;
 .footer-logo:focus{
 	background-color: #ca2c37;
 }
+.footer-logo img{
+	width: 111px;
+	margin: 0px 55px 0px 55px;
+}
 .footer-contacts{
 	font-size: 18px;
 	text-align: left;
 	color: #f3f7f9;
+	width: 325px;
 }
 .site-navigation-footer-item{
 	font-size: 13px;
