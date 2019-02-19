@@ -51,36 +51,34 @@ a{
 
 .searching-form {
   	width: 270px;
-  	margin: 10px 49px;
+  	align-items: stretch;
   	position: relative;
 }
-.searching-form::before{
-	content: "";
+.searching + svg{
 	position: absolute;
-	top: 2px;
-	left: -30px;
-	width: 20px;
-	height: 20px;
-	background-image: url("../img/icon-search.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+	margin-top: -30px;
+	margin-left: 20px;
+	fill: white;
+	opacity: 0.3;
+}
+.searching:focus + svg{
+	position: absolute;
+	margin-top: -30px;
+	margin-left: 20px;
+	fill: #ee3643;
 }
 .searching{
-	color: #ffffff;
+	width: 100%;
+    padding: 12px 20px 12px 50px;
+    box-sizing: border-box;
+    color: #ffffff;
 	background-color: transparent;
 	border: none;
 }
-.searching:hover{
+.searching:focus {
 	background-color: white;
 	color: black;
-	display: block;
-    padding: 12px 10px;
-    line-height: 19px;
-    width: 270px;
-}
-.searching-form:hover{
-	width: 270px;
-	margin: 0;
+  	outline: none;
 }
 .searching::placeholder{
 	color: white;
@@ -216,8 +214,7 @@ a{
 	padding: 10px;
 	position: relative;
 }
-.user-navigation a:hover,
-.user-navigation a:focus{
+.user-navigation a:hover{
 	color: #ee3643;
 }
 .login-link{
@@ -227,7 +224,13 @@ a{
 	padding-left: 35px;
 	position: relative;
 }
+.login-link + svg{
+	position: absolute;
+	margin-bottom: 50px;
+}
+
 .login-link a::before{
+	fill: black;
 	content: "";
 	position: absolute;
 	top: 13px;
@@ -333,20 +336,52 @@ a{
   padding: 0;
   margin: 0 0 20px;
 }
-.advantages-goods .advantages-title{
+.advantages-goods .advantages-title-first{
 	position: relative;
 }
-.advantages-goods .advantages-title::after{
+.advantages-goods .advantages-title-first::after{
 	content: "";
 	position: absolute;
 	top: 10px;
-	right: 20px;
+	right: 15px;
 	width: 44px;
 	height: 65px;
 	background-image: url("../img/icon-1.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
+.advantages-goods .advantages-title-second{
+	position: relative;
+}
+.advantages-goods .advantages-title-second::after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 0;
+	width: 75px;
+	height: 61px;
+	background-image: url("../img/icon-2.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.advantages-goods .advantages-title-third{
+	position: relative;
+}
+.advantages-goods .advantages-title-third::after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	width: 78px;
+	height: 62px;
+	background-image: url("../img/icon-3.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.advantages-goods .advantages-item{
+	position: relative;
+}
+
 .advantages-wrapper{
   	display: flex;
   	justify-content: space-between;
@@ -358,6 +393,34 @@ a{
   	display: flex;
   	flex-direction: column;
   	justify-content: space-between;
+}
+.advantages-conditions .advantages-title-first{
+	position: relative;
+}
+.advantages-conditions .advantages-title-first::after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	width: 59px;
+	height: 72px;
+	background-image: url("../img/icon-4.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.advantages-conditions .advantages-title-second{
+	position: relative;
+}
+.advantages-conditions .advantages-title-second::after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	width: 78px;
+	height: 63px;
+	background-image: url("../img/icon-5.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 .advantages-conditions .advantages-item {
   	margin-bottom: 20px;
@@ -397,8 +460,8 @@ a{
 	color: white;
 	text-transform: uppercase;
 	position: absolute;
-	top: 6px;
-	left: 65px;
+	top: -10px;
+	left: 25px;
 }
 .slider-content{
     margin: 0;
@@ -412,23 +475,24 @@ a{
 	text-align: left;
 	color: white;
 	position: absolute;
-	top: 60px;
-	left: 65px;
+	top: 45px;
+	left: 25px;
 }
 .drill-button-back{
 	position: absolute;
-	top: 160px;
-	left: 75px;
+	top: 130px;
+	left: 25px;
+
 }
 .drill-button-next{
 	position: absolute;
-	top: 160px;
-	left: 620px;
+	top: 130px;
+	right: 25px;
 }
 .button-slider{
 	position: absolute;
-	top: 220px;
-	left: 65px;
+	top: 210px;
+	left: 25px;
 	border-radius: 2px;
 }
 
@@ -457,6 +521,7 @@ a{
 }
 .catalog-item{
 	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	justify-content: space-between;
 	padding: 0;
@@ -729,7 +794,9 @@ a{
 
 
 /*Каталог*/
-
+.user{
+	list-style: none;
+}
 .catalog-header
 {
 	background-color: #f4f7f9;
@@ -747,10 +814,22 @@ a{
 	color: #32425c;
 	text-decoration: underline;
 }
+.breadcrumbs{
+	display: flex;
+}
+.breadcrumbs-list{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.breadcrumbs a{
+	text-decoration: none;
+}
 .breadcrumbs li{
 	text-align: left;
 	color: black;
 	text-transform: uppercase;
+	padding: 30px;
 }
 .filter-item{
 	background-color: #f7f3ec;
@@ -760,11 +839,14 @@ a{
 .filter-price{
 	border: none;
 }
-.filter-manufacturers{
+.filter-fieldset{
 	border: none;
 }
+.filter-manufacturers{
+	list-style: none;
+}
 .filter-nutrition{
-	border: none;
+	list-style: none;
 }
 legend{
 	font-family: PTSans;
@@ -784,12 +866,21 @@ legend{
 	text-align: left;
 	text-transform: uppercase;
 	color: black;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.catalog-content{
+	display: flex;
 }
 .sort-by a{
 	text-align: left;
 	text-transform: uppercase;
 	color: rgb(172, 170, 165);
-	border-bottom: dotted; 
+	border-bottom: dotted;
+}
+.sort-by li{
+	margin: auto;
 }
 .sort-by a:hover,
 .sort-by a:focus{
@@ -822,6 +913,11 @@ legend{
 .button-bookmarks:hover{
 	border: 2px solid #32425c;
 }
+.pagination-list{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
 .pagination-item{
 	text-align: center;
 	color: black;
@@ -848,8 +944,20 @@ label{
 	font-size: 30px;
 }
 
-
-
+.catalog-main-list{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0 0 20px;
+	margin-left: 30px;
+	font-family: PTSans;
+}
+.catalog-main-list li{
+	border: 1px solid lightgrey;
+	width: 220px;
+}
 
 
 
