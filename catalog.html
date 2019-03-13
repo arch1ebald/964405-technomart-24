@@ -77,12 +77,22 @@
          <div class="catalog-content">
          <section class="filters">
             <p class="filter-item">Фильтр</p>
-            <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-               <fieldset class="filter-price">
-                  <legend>Цена :</legend>
-                  <input type="range" min="0" max="30000" name="itemprice" step="1">
-                  <input type="range" min="0" max="30000" name="itemprice" step="1">
-               </fieldset>
+            <div class="filter-value">
+               <h2>Цена:</h2>
+               <div class="range-filter">
+                  <div class="range-controls">
+                     <div class="scale">
+                        <div class="bar"></div>
+                        <div class="toggle min-toggle"></div>
+                        <div class="toggle max-toggle"></div>
+                     </div>
+                  </div>
+                  <div class="price-controls">
+                     <input type="text" class="min-price" value="0">
+                     <span> - </span>
+                     <input type="text" class="max-price" value="30000">
+                  </div>
+               </div>
                <hr>
                <fieldset class="filter-fieldset">
                   <legend>Производители :</legend>
@@ -377,5 +387,6 @@
          </div>
          </div>
       </footer>
+       <script src="js/script.js"></script>
    </body>
 </html>
