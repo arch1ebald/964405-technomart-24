@@ -656,8 +656,10 @@ a{
 	box-shadow: 0 3px 0 0 #367315;
 	border-radius: 4px;
 	margin-top: 40px;
-	margin-left: 40px;
+	margin-left: 30px;
+	margin-right: 30px;
 	position: relative;
+	
 }
 .cart-button a::before{
 	content: "";
@@ -689,7 +691,8 @@ a{
 	border: 3px solid #63a63e;
 	border-radius: 4px;
 	margin-top: 10px;
-	margin-left: 40px;
+	margin-left: 30px;
+	margin-right: 30px;
 	padding: 10px 37px;
 	margin-bottom: 45px;
 }
@@ -1412,7 +1415,7 @@ a{
 	padding: 0;
 }
 .breadcrumbs-list svg{
-	margin-top: 8px;
+	margin-top: 0px;
 	margin-right: 20px;
 }
 .breadcrumbs-catalog{
@@ -1861,13 +1864,15 @@ a{
 	margin-left: 10px;
 }
 
-.pagination-item{
+.pagination-item h3{
+	font-weight: normal;
 	text-align: center;
 	color: black;
 	padding: 8px 13px;
 	border: 1px solid #e5e5e5;
 }
-.pagination-item-next{
+.pagination-item-next h3{
+	font-weight: normal;
 	border: 1px solid #e5e5e5;
 	padding: 10px 30px;
 	color: black;
@@ -1882,8 +1887,8 @@ a{
 .pagination-item-next:active{
 	border-color: #ee3744;
 }
-.pagination-item-current{
-	
+.pagination-item-current h3{
+	font-weight: normal;
 	text-align: center;
 	color: white;
 	background-color: #ee3643;
@@ -1914,12 +1919,12 @@ a{
 	background-color: white;
 	box-shadow: 0 0 40px 0px black;
 }
-.add-to-cart p{
+.add-to-cart h3{
 	font-size: 30px;
 	padding: 65px 0 65px 175px;
 	position: relative;
 }
-.add-to-cart p::before{
+.add-to-cart h3::before{
 	content: "";
 	position: absolute;
 	margin-left: 50px;
