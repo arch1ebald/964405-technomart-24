@@ -309,17 +309,18 @@
                Вы можете забрать товар сами, <br>
                заехав в наш офис:
             </p>
-            <a href="#">
+            <a href="#" class="modal-button-map">
               <img src="img/map.jpg" width="300" height="158" alt="Карта">
             </a>
             <div class="company-contacts-button">
-            <a class="button" href="#">Заблудились? Напишите нам!</a>
+            <a class="button write-us-button" href="#">Заблудились? Напишите нам!</a>
           </div>
          </section>
       </div>
    </div>
-         <section class="modal-map">
+         <section class="modal modal-map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="970" height="476" allowfullscreen></iframe>
             <p>
                <img src="img/map-2.png" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
             </p>
@@ -327,8 +328,7 @@
               <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
             </button>
          </section>
-      </div>
-       <form class="writing-form">
+       <form class="modal writing-form">
             <div class="user-form">
               <p>
                <label for="name-field">Ваше имя:</label>
@@ -415,5 +415,61 @@
          </div>
       </footer>
       <script src="js/script.js"></script>
+      <script>
+  var link = document.querySelector(".services-items-title");
+  
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+  });
+  var link = document.querySelector(".login-link");
+  
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+  });
+  var link = document.querySelector(".register-link");
+  
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+  });
+ 
+  var mapLink = document.querySelector(".modal-button-map");
+
+  var mapPopup = document.querySelector(".modal-map");
+  var mapClose = mapPopup.querySelector(".modal-close");
+
+   mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
+
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("modal-show")) {
+        mapPopup.classList.remove("modal-show");
+      }
+    }
+  });
+
+  var link = document.querySelector(".write-us-button");
+  
+  var popup = document.querySelector(".writing-form");
+  var close = popup.querySelector(".writing-form-close");
+  
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+  });
+   close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+  
+</script>
    </body>
 </html>

@@ -561,6 +561,9 @@ a{
 	background-color: transparent;
 	border: 0;
 }
+.drill-button-next:actvie > .slider-item{
+	left: -200px;
+}
 .drill-button-next::after{
 	content: "";
 	position: absolute;
@@ -852,7 +855,6 @@ a{
 	list-style: none;
 }
 .sub-menu-delivery{
-	display: none;
 	position: absolute;
 	width: 275px;
 	margin-top: -90px;
@@ -1219,14 +1221,29 @@ a{
 }
 .modal-map{
 	position: fixed;
-	top: 15%;
+	top: 10%;
 	left: 15%;
 	display: none;
 }
+.modal-map p {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: 5px solid white;
+}
 .modal-close{
 	position: absolute;
-	left: 925px;
-	top: 35px;
+	left: 980px;
+	top: 10px;
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
@@ -1241,7 +1258,18 @@ a{
 	background-color: white;
 	box-shadow: 0 0 40px 0px black;
 }
+.modal-show{
+	display: block;
+}
 .writing-form-close{
+	position: absolute;
+	left: 585px;
+	top: 10px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+.writing-form-catalog-close{
 	position: absolute;
 	left: 585px;
 	top: 10px;
@@ -1469,6 +1497,7 @@ a{
 	background: #f1f1f1;
 	border-radius: 5px;
 	overflow: hidden;
+
 }
 .range-controls .scale {
 	margin-top: 39px;
@@ -1909,6 +1938,9 @@ a{
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+}
+.catalog-modal-show{
+	display: block;
 }
 .order-form{
 	background-color: #f4f4f4;

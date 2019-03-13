@@ -59,3 +59,9 @@
     };
 };
 })();
+
+ var link = document.querySelector(".site-navigation-footer-item");
+  
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+  });
