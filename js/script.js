@@ -1,67 +1,57 @@
-;(function() {
-  var scale = document.querySelector('.scale');
-  var toggles = document.querySelectorAll('.toggle');
-  var maxToggle = document.querySelectorAll('.max-toggle')
-
-  var bar = document.querySelector('.bar');
-
-  var minValue = document.querySelector('.min-price');
-  var maxValue = document.querySelector('.max-price');
-
-  toggles.forEach(toggle => toggle.onmousedown = function(e) {
-    var toggleCoords = getCoords(toggle);
-    var shiftX = e.pageX - toggleCoords.left;
-    
-    var scaleCoords = getCoords(scale);
-
-      document.onmousemove = function(e) {
-        var newLeft = e.pageX - shiftX - scaleCoords.left;
-
-        if (newLeft < 10) {
-          newLeft = 10;
-        }
-
-        if (newLeft > 210) {
-          newLeft = 210;
-        }
-
-        toggle.style.left = `${newLeft}px`;
-
-        if (toggle.classList.contains('min-toggle')) {
-          minValue.value = `${Math.round(((newLeft - 10) / 200) * 30000)}`;
-
-          bar.style.left = `${newLeft}px`;
-          bar.style.width = `${maxToggle[0].offsetLeft - newLeft}px`;
-          if (maxToggle.offsetLeft - newLeft < 0) bar.style.width = 0;
-        } else {
-          maxValue.value = `${Math.ceil(((newLeft - 10) / 200) * 30000)}`;
-          bar.style.width = `${newLeft - 10}px`;
-        }
-      }
-
-      document.onmouseup = function() {
-        document.onmousemove = document.onmouseup = null;
-      };
-
-      return false; // disable selection start (cursor change)
-  });
-
-    toggles.forEach(toggle => toggle.ondragstart = function() {
-      return false;
+"use strict";
+var buy = document.querySelectorAll(".buy-button");
+var popup = document.querySelector(".added-to-cart");
+var close = document.querySelector(".pop-up-close");
+var close = document.querySelector(".add-to-cart-close");
+var messageOpen = document.querySelector(".write-us");
+var messagePopup = document.querySelector(".modal-write-us");
+var form =  messagePopup.querySelector("form");
+var myName = messagePopup.querySelector("#name");
+var email = messagePopup.querySelector("#email");
+var text = messagePopup.querySelector("#message-field");
+var messageClose = document.querySelector(".messageClose");
+var mapOpen = document.querySelector(".modal-button-map");
+var mapPopup = document.querySelector(".modal-big-map");
+var mapClose = document.querySelector(".mapClose");
+[].forEach.call(buy, function(buy){
+    buy.addEventListener("click", function (event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+        popup.classList.add("modal-animation");
     });
-
-  function getCoords(elem) { // кроме IE8-
-    var box = elem.getBoundingClientRect();
-
-    return {
-      top: box.top + pageYOffset,
-      left: box.left + pageXOffset
-    };
-};
-})();
-
- var link = document.querySelector(".site-navigation-footer-item");
-  
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-  });
+});
+close.addEventListener("click", function (event) {
+    event.preventDefault();
+    popup.classList.remove("modal-content-show");
+    popup.classList.remove("modal-animation");
+});
+messageOpen.addEventListener("click", function (event) {
+    event.preventDefault();
+    messagePopup.classList.add("modal-content-show");
+    messagePopup.classList.add("modal-animation");
+//    console.log("Напишите нам");
+});
+form.addEventListener("submit", function (event) {
+    if (!myName.value||!email.value||!text.value) {
+        event.preventDefault();
+        console.log(myName.value);
+        console.log(email.value);
+        console.log(text.value);
+        alert("Нужно заполнить все поля формы!");
+    }
+})
+messageClose.addEventListener("click", function (event) {
+    event.preventDefault();
+    messagePopup.classList.remove("modal-content-show");
+    messagePopup.classList.remove("modal-animation");
+});
+mapOpen.addEventListener("click", function (event) {
+    event.preventDefault();
+    mapPopup.classList.add("modal-content-show");
+    mapPopup.classList.add("modal-animation");
+});
+mapClose.addEventListener("click", function (event) {
+    event.preventDefault();
+    mapPopup.classList.remove("modal-content-show");
+    mapPopup.classList.remove("modal-animation");
+});
