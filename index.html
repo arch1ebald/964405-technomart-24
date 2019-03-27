@@ -3,8 +3,8 @@
    <head>
       <meta charset="utf-8">
       <title>HTML Academy: Техномарт</title>
-      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i;PT+Sans:400,400i,700,700i&amp;subset=cyrillic" 
-      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i,PT+Sans:400,400i,700,700i&amp;subset=cyrillic" 
+         rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.min.css" rel="stylesheet">
    </head>
@@ -37,10 +37,12 @@
                <h1 class="visually-hidden">Техномарт</h1>
                <div class="site-info">
                   <p class="about-site">
-                     Интернет-магазин строительных материалов <br> и инструментов для ремонта
+                     Интернет-магазин 
+                     строительных материалов 
+                     и инструментов для ремонта
                   </p>
                   <div class="header-contacts">
-                     <div class="phone-number"> <a href="#">+7 (812) 555-05-55</a></div>
+                     <a class="phone-number" href="#">+7 (812) 555-05-55</a>
                      <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                   </div>
                   <ul class="user-navigation">
@@ -87,11 +89,10 @@
                <div class="advantages-wrapper">
                   <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
                   <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-                  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
                   <div class="slider">
                      <div class="slider-controls">
-                        <label for="product-1">Первый</label>
-                        <label for="product-2">Второй</label>
+                        <label for="product-1">Назад</label>
+                        <label for="product-2">Вперед</label>
                      </div>
                      <ul class="slider-content">
                         <li class="slider-left" id="slider-1">
@@ -218,9 +219,9 @@
                   </p>
                </div>
                <div class="service-block">
-                  <input type="radio" id="button-1" name="service-toggle" checked>
-                  <input type="radio" id="button-2" name="service-toggle">
-                  <input type="radio" id="button-3" name="service-toggle">
+                  <input type="radio" id="button-1" name="service-toggle" checked class="visually-hidden">
+                  <input type="radio" id="button-2" name="service-toggle" class="visually-hidden">
+                  <input type="radio" id="button-3" name="service-toggle" class="visually-hidden">
                   <div class="service-toggle">
                      <label for="button-1">Доставка</label>
                      <label for="button-2">Гарантия</label>
@@ -360,14 +361,18 @@
                      </a>
                   </li>
                </ul>
-               <p class="footer-mail-info">
-                  <b class="footer-call-back">Обратная связь :</b>
-                  <b class="web-site">mail@htmlacademy.ru</b>
-               </p>
-               <p class="footer-mail-info">
-                  <b class="footer-call-back">Разработано -</b>
-                  <a href="https://htmlacademy.ru/intensive/htmlcss/" class="web-site">htmlacademy.ru</a>
-               </p>
+               <div class="footer-info-top">
+                  <p class="footer-mail-info">
+                     <b class="footer-call-back">Обратная связь :</b>
+                     <b class="web-site">mail@htmlacademy.ru</b>
+                  </p>
+               </div>
+               <div class="footer-info-bottom">
+                  <p class="footer-mail-info">
+                     <b class="footer-call-back">Разработано -</b>
+                     <a href="https://htmlacademy.ru/intensive/htmlcss/" class="web-site">htmlacademy.ru</a>
+                  </p>
+               </div>
             </div>
          </div>
       </footer>
@@ -382,7 +387,7 @@
                <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/>
             </svg>
          </button>
-      </div>    
+      </div>
       <div class="pop-up modal-write-us">
          <button class="pop-up-close messageClose" type="button">Закрыть</button>
          <form action="https://echo.htmlacademy.ru" method="post" id="message">
